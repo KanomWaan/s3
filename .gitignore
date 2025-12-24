@@ -1,0 +1,4 @@
+makefile.json
+s3-uploader/s3-uploader
+s3-deleter/s3-deleter
+*.tar.gz

@@ -1,0 +1,10 @@
+{
+  "V_NGINX_NAME": "",
+  "V_LOCAL_FILE_PATH": "",
+  "V_TAR_NAME": "",
+  "V_S3_BUCKET": "",
+  "V_S3_PREFIX": "",
+  "V_AWS_ACCESS_KEY_ID": "",
+  "V_AWS_SECRET_ACCESS_KEY": "",
+  "V_AWS_REGION": ""
+}
