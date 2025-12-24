@@ -4,9 +4,25 @@
 
 ---
 
+## สิ่งที่ต้องมีในเครื่อง (Prerequisites)
+
+ก่อนใช้งาน ต้องติดตั้งโปรแกรมเหล่านี้ก่อน:
+
+1.  **kubectl**: ต้องต่อ Cluster ได้ และมีสิทธิ์ exec เข้า Pod
+2.  **Go (Golang)**: สำหรับ build โปรแกรม (Download: https://go.dev/dl/)
+3.  **jq**: สำหรับอ่านไฟล์ config (ติดตั้งผ่าน `brew install jq` หรือ `apt install jq`)
+
+---
+
 ## 1. การตั้งค่า (เริ่มที่นี่ก่อน)
 
-แก้ไขไฟล์ `makefile.json` เพื่อระบุข้อมูลที่จำเป็น:
+เมื่อ Clone โปรเจกต์มาแล้ว ให้สร้างไฟล์ Config จากตัวอย่าง:
+
+```bash
+cp makefile.example.json makefile.json
+```
+
+จากนั้นแก้ไขไฟล์ `makefile.json` เพื่อระบุข้อมูลที่จำเป็น:
 
 ```json
 {
@@ -46,10 +62,3 @@
     ```bash
     make delete
     ```
-
----
-
-## สิ่งที่ต้องมีในเครื่อง (Prerequisites)
-
-1.  **kubectl**: ต้องต่อ Cluster ได้ และมีสิทธิ์ exec เข้า Pod
-2.  **Go (Golang)**: ต้องติดตั้งในเครื่องเพื่อใช้ build ตัวโปรแกรมอัปโหลด
